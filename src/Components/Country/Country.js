@@ -7,8 +7,13 @@ const Country = (props) => {
         height: '50px',
         width: '50px'
     }
+    const countryStyle={
+        border: '1px solid red',
+        margin: '10px',
+        padding: '10px'
+    }
     return (
-        <div>
+        <div style={countryStyle}>
             <h4>{name} has a population of <small>{population}</small></h4> 
             <img style={flagStyle} src={flag} alt=""/>
             <p>Region: {region}</p>
